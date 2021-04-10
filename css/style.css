@@ -26,12 +26,12 @@ ul.navbar-nav a:hover {
   color: #ffa700 !important; 
   
 }
-footer:hover a,
+
 ul:hover li{
   opacity: .2;
   filter: blur(2px);
 }
-footer a:hover,
+
 ul li:hover{
   opacity: 1;
   filter:blur(0px);

@@ -439,7 +439,7 @@ function buildTable(data) {
     var table = document.getElementById('yoga');
     for (var i = 0; i < data.length; i++) {
         var row = `
-                    <div class="col md-4">
+                    <div class="col md-4 wow animate__animated animate__fadeInUp">
                       <div class="card mb-4 box-shadow">
                         <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="${data[i].img_url}" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></img>        
                         <div class="card-body">

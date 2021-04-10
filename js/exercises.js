@@ -181,7 +181,7 @@ function buildTable(data) {
     var table = document.getElementById('exercises');
     for (var i = 0; i < data.length; i++) {
         var row = `
-        <div class="col mb-3">
+        <div class="col mb-3 wow animate__animated animate__fadeInUp">
             <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg" style="background-image: url('${data[i].img}');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">${data[i].name}</h2>

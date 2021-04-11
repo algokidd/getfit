@@ -40,11 +40,7 @@ ul li:hover{
 .hero-image {
 /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-1.jfif");
-
-/* Set a specific height */
 height: 100%;
-
-/* Position and center the image to scale nicely on all screens */
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -82,7 +78,7 @@ input.form-control {
 
 .card-cover {
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
 }
 .rounded-4 { border-radius: .5rem; }
@@ -91,3 +87,19 @@ input.form-control {
 .text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
 .text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
 .text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+
+.feature {
+  display: block;
+  padding: 25px;
+  border-left: 1px solid rgba(0, 0, 0, 0.08); }
+  @media (max-width: 767.98px) {
+    .feature {
+      border-left: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08); } }
+  .feature.border-b {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+  .feature.no-border-l {
+    border-left: none; }
+    .feature h3 {
+    font-size: 20px; }
+

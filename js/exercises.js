@@ -186,7 +186,7 @@ function buildTable(data) {
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">${data[i].name}</h2>
                 <div class="container">
-                  <button style="color: #ffa700;" class="btn" onclick="changeVideo('${data[i].video}')" ><i class="fal fa-play-circle fa-3x mx-3"></i></button>
+                  <button style="color: #ffa700;" class="btn" onclick="changeVideo('${data[i].video}')" ><i class="animate__animated animate__pulse animate__infinite fal fa-play-circle fa-3x mx-3"></i></button>
                 </div>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="d-flex align-items-center me-3">

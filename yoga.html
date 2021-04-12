@@ -45,8 +45,7 @@
     <div class="hero-image">
         <div class="hero-text">
             <h1 class="wow animate__animated animate__fadeInUp">Yoga</h1>
-            <p class="wow animate__animated animate__fadeInUp">And I'm a Photographer</p>
-            <button class="btn btn-primary wow animate__animated animate__fadeInUp">Hire me</button>
+            <p class="wow animate__animated animate__fadeInUp">Free your Mind & Soul</p>
         </div>
         <div class="container" style="text-align: center; top: 60%; position: relative;">
             <p><i class="mt-5 animate__animated animate__bounce animate__infinite fas fa-angle-down fa-9x "></i></p>
@@ -55,7 +54,15 @@
 
     <div class="py-5 bg-light">
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="yoga" name="yoga">
+            <h2 class="pb-2 border-bottom wow animate__animated animate__fadeInUp">Yoga</h2>
+            <div class="mt-4 wow animate__animated animate__fadeInUp mb-5">
+                <form class="form-inline justify-content-center">
+                   <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Search Asan"
+                      aria-label="Search" id="search">
+                   <button type="button" class="btn btn-primary btn-lg mr-3" id="btnSort">Search</button>
+                </form>
+             </div>
+            <div class="yoga row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="yoga" name="yoga">
                 <script src="js/yoga.js"></script>
             </div>
         </div>
@@ -159,6 +166,24 @@
     <script src="js/navbar.js"></script>
     <script src="js/wow.js"></script>
     <script>new WOW().init();</script>
+    <script>
+        jQuery.expr[':'].contains = function (a, i, m) {
+           return jQuery(a).text().toUpperCase()
+              .indexOf(m[3].toUpperCase()) >= 0;
+        };
+  
+        $('#search').keyup(function () {
+           $('.card').removeClass('d-none');
+           var filter = $(this).val(); // get the value of the input, which we filter on
+           $('.yoga').find('.col .card .card-body h5:not(:contains("' + filter + '"))').parent().parent().addClass('d-none');
+        })
+  
+        $('#btnSort').click(function () {
+           $('.yoga .card').sort(function (a, b) {
+              return $(a).find(".card-title").text() > $(b).find(".card-title").text() ? 1 : -1;
+           }).appendTo(".yoga");
+        })
+     </script>
 </body>
 
 </html>

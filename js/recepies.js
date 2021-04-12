@@ -227,8 +227,8 @@ function buildTable(data) {
         <div class="col mb-3 wow animate__animated animate__fadeInUp">
             <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg" style="background-image: url('${data[i].img}');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white ">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-shadow-1">${data[i].name}</h2>                
-                        <ul class="d-flex list-unstyled mt-auto">
+                    <h2 class="card-title pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-shadow-1">${data[i].name}</h2>                
+                        <ul class="mt-3 d-flex list-unstyled mt-auto">
                         <li class="d-flex align-items-center me-3 text-shadow-1">
                             <h5 >${data[i].tag}</h5>
                         </li>                            

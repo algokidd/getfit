@@ -56,7 +56,14 @@
 
    <div class="container py-5" id="custom-cards">
       <h2 class="pb-2 border-bottom wow animate__animated animate__fadeInUp">Exercises</h2>
-      <div id="exercises" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 align-items-stretch py-5">
+      <div class="mt-4 animate__animated animate__fadeInUp">
+         <form class="form-inline justify-content-center">
+            <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Search Exercise"
+               aria-label="Search" id="search">
+            <button type="button" class="btn btn-primary btn-lg mr-3" id="btnSort">Search</button>
+         </form>
+      </div>
+      <div id="exercises" class="exercises row row-cols-1 row-cols-sm-2 row-cols-md-3 align-items-stretch py-5">
 
 
       </div>
@@ -155,6 +162,24 @@
    <script src="js/wow.js"></script>
    <script>new WOW().init();</script>
    <script src="js/exercises.js"></script>
+   <script>
+      jQuery.expr[':'].contains = function (a, i, m) {
+         return jQuery(a).text().toUpperCase()
+            .indexOf(m[3].toUpperCase()) >= 0;
+      };
+
+      $('#search').keyup(function () {
+         $('.card').removeClass('d-none');
+         var filter = $(this).val(); // get the value of the input, which we filter on
+         $('.exercises').find('.col .card .d-flex h2:not(:contains("' + filter + '"))').parent().parent().addClass('d-none');
+      })
+
+      $('#btnSort').click(function () {
+         $('.exercises .card').sort(function (a, b) {
+            return $(a).find(".card-title").text() > $(b).find(".card-title").text() ? 1 : -1;
+         }).appendTo(".exercises");
+      })
+   </script>
 </body>
 
 </html>

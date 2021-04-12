@@ -184,7 +184,7 @@ function buildTable(data) {
         <div class="col mb-3 wow animate__animated animate__fadeInUp">
             <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg" style="background-image: url('${data[i].img}');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">${data[i].name}</h2>
+                <h2 class="card-title pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">${data[i].name}</h2>
                 <div class="container">
                   <button style="color: #ffa700;" class="btn" onclick="changeVideo('${data[i].video}')" ><i class="animate__animated animate__pulse animate__infinite fal fa-play-circle fa-3x mx-3"></i></button>
                 </div>

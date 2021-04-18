@@ -1,0 +1,26 @@
+[
+	{
+		"name": "George",
+		"gender": "male",
+		"img": "../img/george.jfif",
+		"experience": "5 years"
+	},
+	{
+		"name": "Pety",
+		"gender": "female",
+		"img": "../img/petry.jfif",
+		"experience": "3 years"
+	},
+	{
+		"name": "Alex",
+		"gender": "male",
+		"img": "../img/alex.jfif",
+		"experience": "3 years"
+	},
+	{
+		"name": "Rex",
+		"gender": "male",
+		"img": "../img/rex.jfif",
+		"experience": "2 years"
+	}
+]

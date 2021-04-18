@@ -26,16 +26,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"> Home </a>
+                        <a class="nav-link" href="index.html"><i class="far fa-home"></i> Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="features.html"> Features </a>
+                        <a class="nav-link" href="features.html"><i class="far fa-superscript"></i> Features </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html"> About </a>
+                        <a class="nav-link" href="about.html"><i class="far fa-info"></i> About </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html"> Contact </a>
+                        <a class="nav-link" href="contact.html"><i class="far fa-id-card-alt"></i> Contact </a>
                     </li>
                 </ul>
             </div>
@@ -57,11 +57,11 @@
             <h2 class="pb-2 border-bottom wow animate__animated animate__fadeInUp">Yoga</h2>
             <div class="mt-4 wow animate__animated animate__fadeInUp mb-5">
                 <form class="form-inline justify-content-center">
-                   <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Search Asan"
-                      aria-label="Search" id="search">
-                   <button type="button" class="btn btn-primary btn-lg mr-3" id="btnSort">Search</button>
+                    <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Search Asan"
+                        aria-label="Search" id="search">
+                    <button type="button" class="btn btn-primary btn-lg mr-3" id="btnSort">Search</button>
                 </form>
-             </div>
+            </div>
             <div class="yoga row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="yoga" name="yoga">
             </div>
         </div>
@@ -92,14 +92,14 @@
                 <div class="col-md-4 text-center text-md-left ">
 
                     <div class="py-0">
-                        <h3 class="my-4 text-white">About<span class="mx-2 font-italic text-warning ">Fit Buddy</span>
+                        <h3 class="my-4 text-white">About<span class="mx-2 text-warning">FIT BUDDY</span>
                         </h3>
 
                         <p class="footer-links font-weight-bold">
-                            <a class="text-white" href="#">Home</a> |
-                            <a class="text-white" href="#">Blog</a> |
-                            <a class="text-white" href="#">About</a> |
-                            <a class="text-white" href="#">Contact</a>
+                            <a class="text-white" href="index.html">Home</a> |
+                            <a class="text-white" href="features.html">Features</a> |
+                            <a class="text-white" href="about.html">About</a> |
+                            <a class="text-white" href="contact.html">Contact</a>
                         </p>
                         <p class="text-light py-4 mb-4">&copy;
                             <script>document.write(new Date().getFullYear());</script> All rights reserved.
@@ -110,16 +110,16 @@
                 <div class="col-md-4 text-white text-center text-md-left ">
                     <div class="py-2 my-4">
                         <div>
-                            <p class="text-white"> <i class="fa fa-map-marker mx-2 "></i>
+                            <p class="text-white"> <i class="far fa-map-marker mx-2 "></i>
                                 Accessible from all around globe
                             </p>
                         </div>
 
                         <div>
-                            <p><i class="fa fa-phone  mx-2 "></i> <a href="callto:+919087654321">+91 9087654321</a> </p>
+                            <p><i class="far fa-phone mx-2 "></i> <a href="tel:+919087654321">+91 9087654321</a> </p>
                         </div>
                         <div>
-                            <p><i class="fa fa-envelope  mx-2"></i><a
+                            <p><i class="far fa-envelope  mx-2"></i><a
                                     href="mailto:support@fitbuddy.com">support@fitbuddy.com</a></p>
                         </div>
                     </div>
@@ -129,9 +129,11 @@
                     <span class=" font-weight-bold ">About the Website</span>
                     <p class="text-warning my-2">We offer training and access to our resources for all clients.</p>
                     <div class="py-2 wow animate__animated animate__fadeInUp">
-                        <a href="#"><i class="fab fa-facebook fa-2x mx-3"></i></a>
-                        <a href="#"><i class="fab fa-instagram fa-2x mx-3"></i></a>
-                        <a href="#"><i class="fab fa-twitter fa-2x  mx-3"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i
+                                class="fab fa-facebook fa-2x mx-3"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i
+                                class="fab fa-instagram fa-2x mx-3"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x  mx-3"></i></a>
                         <a href="https://www.github.com/algokidd/" target="_blank"><i
                                 class="fab fa-github fa-2x  mx-3"></i></a>
                     </div>
@@ -149,10 +151,10 @@
         function changeVideo(vId) {
             var iframe = document.getElementById("iframeYoutube");
             iframe.src = "https://www.youtube.com/embed/" + vId;
-            
+
             $("#myModal").modal("show");
         }
-        </script>
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
@@ -162,9 +164,9 @@
     <script>
         $(document).ready(function () {
             $.getJSON('js/yoga.json', function (data) {
-                var table = document.getElementById('yoga');                
+                var table = document.getElementById('yoga');
                 for (var i = 0; i < data.length; i++) {
-                        var row = `
+                    var row = `
                         <div class="col md-4 wow animate__animated animate__fadeInUp">
                           <div class="card mb-4 box-shadow rounded-5 shadow-lg">
                             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="${data[i].img_url}" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></img>        
@@ -180,30 +182,30 @@
                             </div>
                           </div>
                         </div>`
-    
-                        table.innerHTML += row;
-                    }
+
+                    table.innerHTML += row;
+                }
             });
         });
     </script>
     <script>
         jQuery.expr[':'].contains = function (a, i, m) {
-           return jQuery(a).text().toUpperCase()
-           .indexOf(m[3].toUpperCase()) >= 0;
+            return jQuery(a).text().toUpperCase()
+                .indexOf(m[3].toUpperCase()) >= 0;
         };
-        
+
         $('#search').keyup(function () {
             $('.card').removeClass('d-none');
             var filter = $(this).val(); // get the value of the input, which we filter on
             $('.yoga').find('.col .card .card-body h5:not(:contains("' + filter + '"))').parent().parent().addClass('d-none');
         })
-        
+
         $('#btnSort').click(function () {
-           $('.yoga .card').sort(function (a, b) {
-              return $(a).find(".card-title").text() > $(b).find(".card-title").text() ? 1 : -1;
-           }).appendTo(".yoga");
+            $('.yoga .card').sort(function (a, b) {
+                return $(a).find(".card-title").text() > $(b).find(".card-title").text() ? 1 : -1;
+            }).appendTo(".yoga");
         })
-     </script>
+    </script>
 </body>
 
 </html>

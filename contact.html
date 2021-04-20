@@ -68,7 +68,7 @@
                      <input name="data[Name]" type="text" class="form-control" placeholder="Your Name" required>
                   </div>
                   <div class="form-group">
-                     <input name="data[Email]" type="text" class="form-control" placeholder="Your Email" required>
+                     <input name="data[Email]" type="email" class="form-control" placeholder="Your Email" required>
                   </div>
                   <div class="form-group">
                      <input name="data[Subject]" type="text" class="form-control" placeholder="Subject" required>
@@ -149,8 +149,8 @@
     }).then(
         response => response.json()
     ).then((html) => {
-      // you can put any JS code here
-      alert('Thanks for your resonse!!')
+      alert("Thank You for your resonse, We'll get back to you😊");
+      location.replace("contact.html");
     });
   });
    </script>

@@ -1,5 +1,5 @@
 # getfit
-Created By - Shubham Chavan
+Created By - Shubham Chavan as a learning project.
 
 Technologies used -
 1. HTML.

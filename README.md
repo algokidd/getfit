@@ -8,3 +8,5 @@ Technologies used -
 4. JavaScript.
 5. AJAX.
 6. JQuery.
+
+few commits for hacktober fest

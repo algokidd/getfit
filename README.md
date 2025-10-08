@@ -10,3 +10,4 @@ Technologies used -
 6. JQuery.
 
 few commits for hacktober fest
+commit 5
